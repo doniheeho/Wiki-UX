@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Design - Experiencia de Usuario</title>
+    
+    <!-- Tipografías (Montserrat + Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+	
+    <!-- Header PENDIENTE: Coloca el logo con el nombre que aparece después de imgsrc=, haz lo mismo con todos los pendientes que te ponga, gracias -->
+    <header class="header-principal">
+        <div class="logo">
+    <a href="Wiki UX.html">
+        <img src="img/Icono.svg" alt="Wiki Design Logo" width="56" height="45" class="img-logo">
+    </a>
+	  </div>
+        <nav class="nav-superior">
+            <a href="#">INICIO</a>
+            <a href="#">COLABORA</a>
+            <a href="#">ACERCA DE NOSOTROS</a>
+        </nav>
+        <div class="buscador">
+            <img src="img/Lupa.svg" alt="Buscar" width="43" height="27" class="icono-inline">
+            <input type="text" placeholder="Buscar en la Wiki">
+        </div>
+    </header>
+	
+<!-- Contenedor principal  -->
+    <div class="contenedor-wiki">
+
+        <!-- Barra lateral  -->
+<aside class="sidebar-temas">
+
+    <h2>
+        TEMAS 
+        <img src="img/FlechaArriba.svg" alt="Expandir temas" class="icono-inline">
+    </h2>
+    <ul>
+        <li class="activo">
+            <img src="img/Experiencia de usuario.svg" alt="Tema activo" class="icono-inline"> 
+          EXPERIENCIA DE USUARIO
+      </li>
+        <li>
+            <img src="img/Diseño web.svg" alt="" class="icono-inline"> 
+            DISEÑO WEB
+        </li>
+        <li>
+            <!-- PENDIENTE COMPAÑERA: Ícono para Design Thinking -->
+            <img src="img/Diseño de interaccion.svg" alt="" class="icono-inline"> 
+            DESIGN THINKING
+        </li>
+        <li>
+            <img src="img/Diseño centrado en el usuario.svg" alt="" class="icono-inline"> 
+            DISEÑO CENTRADO EN EL USUARIO
+        </li>
+        <li>
+            <img src="img/Diseño de interaccion.svg" alt="" class="icono-inline"> 
+            DISEÑO DE INTERACCIÓN
+        </li>
+        <li>
+            <img src="img/Arquitectura de la informacion.svg" alt="" class="icono-inline"> 
+            ARQUITECTURA DE LA INFORMACIÓN
+        </li>
+        <li>
+            <img src="img/Diseño de navegacion.svg" alt="" class="icono-inline"> 
+            DISEÑO DE NAVEGACIÓN
+        </li>
+        <li>
+            <img src="img/Diseño visual.svg" alt="" class="icono-inline"> 
+            DISEÑO VISUAL
+        </li>
+    </ul>
+
+    <h2>
+        SUMARIO 
+        <!-- PENDIENTE COMPAÑERA -->
+        <img src="img/FlechaArriba.svg" alt="Expandir sumario" class="icono-inline">
+    </h2>
+    <ul>
+        <li><a href="#arquitectura">Arquitectura e interacción</a></li>
+        <li>SUB TEMA 2</li>
+        <li>SUB TEMA 3</li>
+        <li>SUB TEMA 4</li>
+        <li>SUB TEMA 5</li>
+        <li>SUB TEMA 6</li>
+    </ul>
+</aside>
+        <!-- Área de contenido principal -->
+        <main class="contenido-principal">
+            <article class="tarjeta-contenido">
+                
+                <!-- Título del tema -->
+                <h1>EXPERIENCIA DE USUARIO</h1>
+
+                <!-- Descripción general -->
+              <p class="intro">
+              La Experiencia de Usuario (UX) abarca todos los aspectos de la interacción del usuario final con la empresa, sus servicios y sus productos. El objetivo principal es diseñar soluciones intuitivas, accesibles y eficientes. Es decir, son las sensaciones que el usuario experimenta al momento de interactuar con el producto, es importante no confundir UX con UI (Interfaz de Usuario), aunque van de la mano, la UX busca resolver problemas y necesidades para el usuario, la UI se centra en el apartado más estético.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+                <!--  Video introductorio -->
+				<iframe 
+    width="90%" 
+    height="380" 
+    src="https://www.youtube.com/embed/rKQ1qdD1hrE?enablejsapi=1" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen 
+    loading="lazy">
+				</iframe>
+
+                <!-- Info breve sobre el Video -->
+              <p>
+                    En este recurso audiovisual se analizan los principios fundamentales que rigen la percepción del usuario, destacando la importancia de reducir la carga cognitiva durante la navegación.
+                </p>
+
+                <!-- Infografía  -->
+                <div class="seccion-subtema">
+                    <h2>BASES DE LA EXPERIENCIA DE USUARIO</h2>
+                  <p>En la siguiente infografía te presentamos un resumen de las bases fundamentales de la UX, en la cual nuevamente se te presenta la diferencia entre la UX y UI de una forma sencilla.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    
+                    <div class="recurso-media recurso-principal">
+                      <img src="img/Infografía.webp" alt="Infografía pilares de UX" class="img-fluid img-reducida">
+                    </div>
+                </div>
+
+                <!-- Ficha 2 / Subtema -->
+                <div class="seccion-subtema" id="arquitectura">
+                    <div class="texto-subtema">
+                        <h2>SUB TEMA 1: ARQUITECTURA E INTERACCIÓN</h2>
+                      <p>
+                        El diseño de interacción y la arquitectura de la información constituyen el pilar práctico para estructurar interfaces claras, accesibles y navegables, en el siguiente ejemplo te explicamos porqué se genera una mala UX, así como recalcar la importancia de empatizar con el usuario y sus necesidades para no caer en el error de una interfaz saturada que provoca una experiencia negativa.
+                    </p>
+                    </div>
+
+                    <!--  Diagrama Comparativo -->
+                    <div class="recurso-media recurso-principal">
+                        <img src="img/Diagrama.webp" alt="Mala UX vs Buena UX" class="img-fluid">
+                    </div>
+                </div>
+
+            </article>
+      </main>
+
+</div> 
+
+    <!-- Footer  -->
+    <footer class="footer-principal">
+        <div class="contenedor-footer">
+          <div class="logo-footer"><!-- PENDIENTE COMPAÑERA -->
+            <a href="Wiki UX.html"><img src="img/Logo.svg" alt="Wiki Design Logo Footer" class="img-logo-footer"></a> </div>
+			
+            <!-- Texto de Copyright  -->
+            <div>
+              <div class="texto-footer">
+                <p>2026 Wiki Design. Todos los derechos reservados.</p>
+                <p class="nota-educativa">
+                  El contenido de este sitio ha sido desarrollado con fines educativos y académicos. Los textos, imágenes y recursos utilizados pertenecen a sus respectivos autores y se emplean únicamente como material de consulta y aprendizaje.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Script -->
+	<script src="js/main.js"></script>
+</body>
+</html>
