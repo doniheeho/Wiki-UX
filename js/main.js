@@ -1,5 +1,5 @@
 /* ============================================================
-   MENÚ DE TEMAS DE WIKIDESIGN · Actualizado para Donovan
+   MENÚ DE TEMAS DE WIKIDESIGN · Actualizado
    ============================================================ */
 (function () {
   var TEMAS = [
