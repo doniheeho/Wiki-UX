@@ -53,8 +53,8 @@ a {
 
 .marca img {
     display: block;
-    width: 56px;
-    height: 45px;
+    width: 170px;
+    height: auto;
 }
 
 .barra-superior nav {
