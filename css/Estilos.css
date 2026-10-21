@@ -425,3 +425,54 @@ a {
         text-align: center;
     }
 }
+
+.panel-menu.temas {
+    padding-bottom: 50px !important; /* Da espacio extra para que la curva no tape contenido */
+}
+
+.bloque-sumario {
+    position: relative;
+    z-index: 10; /* Eleva el sumario por encima del fondo curvo */
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.titulo-sumario {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--oliva);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.bloque-sumario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.boton-sumario {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-sumario:hover {
+    background-color: var(--lila);
+    color: var(--azul-profundo);
+}
+.boton-sumario {
+    background-color: transparent !important;
+}
