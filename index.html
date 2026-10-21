@@ -10,18 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	
-    <!-- Header PENDIENTE: Coloca el logo con el nombre que aparece después de imgsrc=, haz lo mismo con todos los pendientes que te ponga, gracias -->
-    <header class="header-principal">
-        <div class="logo">
-    <a href="Wiki UX.html">
-        <img src="img/Icono.svg" alt="Wiki Design Logo" width="56" height="45" class="img-logo">
-    </a>
-	  </div>
-        <nav class="nav-superior">
+    
+    <header class="barra-superior">
+        <a class="marca" href="Wiki UX.html" aria-label="WikiDesign, ir al inicio">
+            <img src="img/Icono.svg" alt="Wiki Design Logo" width="56" height="45">
+        </a>
+        <nav aria-label="Navegación principal">
             <a href="#">INICIO</a>
             <a href="#">COLABORA</a>
             <a href="#">ACERCA DE NOSOTROS</a>
@@ -31,62 +28,131 @@
             <input type="text" placeholder="Buscar en la Wiki">
         </div>
     </header>
-	
-<!-- Contenedor principal  -->
+    
+    <!-- Contenedor principal  -->
     <div class="contenedor-wiki">
 
-        <!-- Barra lateral  -->
-<aside class="sidebar-temas">
+        <!-- Barra lateral unificada con la estructura de acordeón interactiva -->
+        <aside class="sidebar" aria-label="Menú de temas">
+          <details class="panel-menu temas" open>
+            <summary>Temas</summary>
+            <nav aria-label="Temas">
+              <ul>
+                <!-- Experiencia de usuario -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Experiencia de usuario.svg" alt="">
+                    <span>Experiencia de usuario</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://danabiu.github.io/wiki-experiencia-usuario/" target="_blank" rel="noopener">Pareja 33 · Daniel Valdez y María Fernanda Damián</a></li>
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp25/" target="_blank" rel="noopener">Pareja 25 · Ximena Rangel y José Ramos</a></li>
+                    <li><a href="https://jolly-moonbeam-e27fb1.netlify.app" target="_blank" rel="noopener">Pareja 1 · Edson Mendez y Adriana Salas</a></li>
+                    <li><a href="https://doniheeho.github.io/Wiki-UX/" target="_blank" rel="noopener">Pareja 9 · Donovan Frabritcio Gonzalez Carrasco y Cinnthya Valeria Gomez Guerrero</a></li>
+                    <li><a href="https://marcoantoniolunaj-debug.github.io/experiencia-usuario-ux/" target="_blank" rel="noopener">Pareja 17 · Jessica Leslie Loyo Camacho y Marco Antonio Luna Jiménez</a></li>
+                    <li><a href="https://aaron-isai.github.io/wikidesign/" target="_blank" rel="noopener">Pareja 20 · Aaron Isai Martinez Perez y Katerine Susana Mata Berardi</a></li>
+                  </ul>
+                </li>
 
-    <h2>
-        TEMAS 
-        <img src="img/FlechaArriba.svg" alt="Expandir temas" class="icono-inline">
-    </h2>
-    <ul>
-        <li class="activo">
-            <img src="img/Experiencia de usuario.svg" alt="Tema activo" class="icono-inline"> 
-          EXPERIENCIA DE USUARIO
-      </li>
-        <li>
-            <img src="img/Diseño web.svg" alt="" class="icono-inline"> 
-            DISEÑO WEB
-        </li>
-        <li>
-            <!-- PENDIENTE COMPAÑERA: Ícono para Design Thinking -->
-            <img src="img/Diseño de interaccion.svg" alt="" class="icono-inline"> 
-            DESIGN THINKING
-        </li>
-        <li>
-            <img src="img/Diseño centrado en el usuario.svg" alt="" class="icono-inline"> 
-            DISEÑO CENTRADO EN EL USUARIO
-        </li>
-        <li>
-            <img src="img/Diseño de interaccion.svg" alt="" class="icono-inline"> 
-            DISEÑO DE INTERACCIÓN
-        </li>
-        <li>
-            <img src="img/Arquitectura de la informacion.svg" alt="" class="icono-inline"> 
-            ARQUITECTURA DE LA INFORMACIÓN
-        </li>
-        <li>
-            <img src="img/Diseño de navegacion.svg" alt="" class="icono-inline"> 
-            DISEÑO DE NAVEGACIÓN
-        </li>
-        <li>
-            <img src="img/Diseño visual.svg" alt="" class="icono-inline"> 
-            DISEÑO VISUAL
-        </li>
-    </ul>
+                <!-- Diseño web -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño web.svg" alt="">
+                    <span>Diseño web</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://wikidigitaldigitaldesign.netlify.app" target="_blank" rel="noopener">Pareja 24 · Andrea Ogando y Jair Pérez (Diseño digital)</a></li>
+                    <li><a href="https://hcastillo2118-collab.github.io/hcastillo2118.github.io/" target="_blank" rel="noopener">Pareja 2 · Hugo Norberto Castillo Aguilar y Rodrigo Chávez Tostado</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Pareja 10 · Alexa Liliana Garcia Zambrano y Paola Vega Velasco</a></li>
+                    <li><a href="https://leonardoradyfik-code.github.io/diseno-web-uvm/" target="_blank" rel="noopener">Equipo 18 · Paulina Maldonado Gutiérrez y Leonardo Magaña Limón</a></li>
+                  </ul>
+                </li>
 
-    <h2>
-        SUMARIO 
-        <!-- PENDIENTE COMPAÑERA -->
-        <img src="img/FlechaArriba.svg" alt="Expandir sumario" class="icono-inline">
-    </h2>
-    <ul>
-        <li><a href="#arquitectura">Arquitectura e interacción</a></li>
-    </ul>
-</aside>
+                <!-- Design thinking -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño de interaccion.svg" alt="">
+                    <span>Design thinking</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp27/" target="_blank" rel="noopener">Pareja 27 · Andrea Salas y Mónica Sánchez</a></li>
+                    <li><a href="https://blaskez.github.io/design-thinking/#" target="_blank" rel="noopener">Pareja 3 · Giovanna Cisneros Enriquez y Talia Fernández Blásquez</a></li>
+                    <li><a href="https://alanjosue904-art.github.io/design-thinking/" target="_blank" rel="noopener">Pareja 11 · Frida Guadalupe Gomez Jaimez y Alan Josue Gonzalez Hernández</a></li>
+                    <li><a href="https://martinezbcaro-code.github.io/wiki-design-thinking-uvm/" target="_blank" rel="noopener">Equipo 19 · Daniella Carolina Martínez Burgoa y Flor Paulina Mares García</a></li>
+                  </ul>
+                </li>
+
+                <!-- Diseño centrado en el usuario -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño centrado en el usuario.svg" alt="">
+                    <span>Diseño centrado en el usuario</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://wikipareja28.github.io/A9_PAREJA28-/" target="_blank" rel="noopener">Pareja 28 · Estefanía Sánchez y Helios Serrato</a></li>
+                    <li><a href="https://isaiaslopezil89-wq.github.io/isaiaslopezil89/" target="_blank" rel="noopener">Pareja 4 · Raúl Isaias Dominguez Lopez y Dulce Andrea Escobar García</a></li>
+                    <li><a href="https://wikiuvm10.github.io/WikiDesign/" target="_blank" rel="noopener">Pareja 12 · Sharon Nicole Gonzalez Rubio y María Yaravith Gonzalez Enríquez</a></li>
+                  </ul>
+                </li>
+
+                <!-- Diseño de interacción -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño de interaccion.svg" alt="">
+                    <span>Diseño de interacción</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://elizabethvzago.github.io/WikidesignMariayEli-dis-interaccion/" target="_blank" rel="noopener">Pareja 29 · María Velarde y Elizabeth Vázquez</a></li>
+                    <li><a href="https://kassy26-lab.github.io/Dise-o-de-interaccion-wikidesing/" target="_blank" rel="noopener">Pareja 13 · Kassandra Sbeydy Gónzalez Vega y María Gabrielle Gónzalez Sánchez</a></li>
+                    <li><a href="https://mana13132-glitch.github.io/equipo21/" target="_blank" rel="noopener">Pareja 21 · Mariana Mendoza Gutiérrez y Annette Jamilete Mendez Fernandez</a></li>
+                  </ul>
+                </li>
+
+                <!-- Arquitectura de la información -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Arquitectura de la informacion.svg" alt="">
+                    <span>Arquitectura de la información</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp22/" target="_blank" rel="noopener">Pareja 22 · María Alejandra Mata Fuentes y Priscila Eleonor Roseyon Mosquera</a></li>
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp30/" target="_blank" rel="noopener">Pareja 30 · Rosalba Velarde y Olaf Viana</a></li>
+                    <li><a href="https://illustrious-quokka-0b0db5.netlify.app" target="_blank" rel="noopener">Pareja 14 · Margarita Monserrat Guerra Díaz y Miguel Salvador Hernández Del Valle</a></li>
+                    <li><a href="https://ayudawikiuvm.freehosting.dev/?utm_source=chatgpt.com" target="_blank" rel="noopener">Pareja 6 · Yesenia Galván Nuñez y Diego Armando Flores Guevara</a></li>
+                  </ul>
+                </li>
+
+                <!-- Diseño de navegación -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño de navegacion.svg" alt="">
+                    <span>Diseño de navegación</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp23/" target="_blank" rel="noopener">Pareja 23 · Eric Mora</a></li>
+                    <li><a href="https://camaradabdn6.github.io/wiki_dise-o_navegacion_pareja15/#" target="_blank" rel="noopener">Pareja 15 · Alondra Ketzally Herrera Perez y Ricardo Herrera Siliceo</a></li>
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp31/" target="_blank" rel="noopener">Pareja 31 · Ignacio Vizuet y Alejandro Wong</a></li>
+                    <li><a href="https://disenodenavegacion.infinityfree.io/?i=1" target="_blank" rel="noopener">Pareja 7 · Crystian Jannahi Garzon Peralta</a></li>
+                  </ul>
+                </li>
+
+                <!-- Diseño visual -->
+                <li class="tema-item">
+                  <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                    <img class="icono-tema" src="img/Diseño visual.svg" alt="">
+                    <span>Diseño visual</span>
+                  </button>
+                  <ul class="parejas">
+                    <li><a href="https://uvmwiki.dreamhosters.com/eqp32/" target="_blank" rel="noopener">Pareja 32 · Susana Velázquez y Daniela Rebollar</a></li>
+                    <li><a href="https://a940058038-collab.github.io/wikidesign-diseno-visual/" target="_blank" rel="noopener">Pareja 16 · Juan C. Lobo García y Luis A. Ibarra Verde</a></li>
+                    <li><a href="https://dvp8.free.je" target="_blank" rel="noopener">Pareja 8 · Kelly Ariadne Gerardo Grajales y America Gaxiola Tinoco</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </details>
+        </aside>
+
         <!-- Área de contenido principal -->
         <main class="contenido-principal">
             <article class="tarjeta-contenido">
@@ -95,31 +161,31 @@
                 <h1>EXPERIENCIA DE USUARIO</h1>
 
                 <!-- Descripción general -->
-              <p class="intro">
-              La Experiencia de Usuario (UX) abarca todos los aspectos de la interacción del usuario final con la empresa, sus servicios y sus productos. El objetivo principal es diseñar soluciones intuitivas, accesibles y eficientes. Es decir, son las sensaciones que el usuario experimenta al momento de interactuar con el producto, es importante no confundir UX con UI (Interfaz de Usuario), aunque van de la mano, la UX busca resolver problemas y necesidades para el usuario, la UI se centra en el apartado más estético.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                <p class="intro">
+                La Experiencia de Usuario (UX) abarca todos los aspectos de la interacción del usuario final con la empresa, sus servicios y sus productos. El objetivo principal es diseñar soluciones intuitivas, accesibles y eficientes. Es decir, son las sensaciones que el usuario experimenta al momento de interactuar con el producto, es importante no confundir UX con UI (Interfaz de Usuario), aunque van de la mano, la UX busca resolver problemas y necesidades para el usuario, la UI se centra en el apartado más estético.       </p>
 
                 <!--  Video introductorio -->
-				<iframe 
-    width="90%" 
-    height="380" 
-    src="https://www.youtube.com/embed/rKQ1qdD1hrE?enablejsapi=1" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen 
-    loading="lazy">
-				</iframe>
+                <iframe 
+                    width="90%" 
+                    height="380" 
+                    src="https://www.youtube.com/embed/rKQ1qdD1hrE?enablejsapi=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen 
+                    loading="lazy">
+                </iframe>
 
                 <!-- Info breve sobre el Video -->
-              <p>
+                <p>
                     En este recurso audiovisual se analizan los principios fundamentales que rigen la percepción del usuario, destacando la importancia de reducir la carga cognitiva durante la navegación.
                 </p>
 
                 <!-- Infografía  -->
                 <div class="seccion-subtema">
                     <h2>BASES DE LA EXPERIENCIA DE USUARIO</h2>
-                  <p>En la siguiente infografía te presentamos un resumen de las bases fundamentales de la UX, en la cual nuevamente se te presenta la diferencia entre la UX y UI de una forma sencilla.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                  <p>En la siguiente infografía te presentamos un resumen de las bases fundamentales de la UX, en la cual nuevamente se te presenta la diferencia entre la UX y UI de una forma sencilla.      </p>
                     
                     <div class="recurso-media recurso-principal">
                       <img src="img/Infografía.webp" alt="Infografía pilares de UX" class="img-fluid img-reducida">
@@ -132,7 +198,7 @@
                         <h2>SUB TEMA 1: ARQUITECTURA E INTERACCIÓN</h2>
                       <p>
                         El diseño de interacción y la arquitectura de la información constituyen el pilar práctico para estructurar interfaces claras, accesibles y navegables, en el siguiente ejemplo te explicamos porqué se genera una mala UX, así como recalcar la importancia de empatizar con el usuario y sus necesidades para no caer en el error de una interfaz saturada que provoca una experiencia negativa.
-                    </p>
+                      </p>
                     </div>
 
                     <!--  Diagrama Comparativo -->
@@ -144,14 +210,14 @@
             </article>
       </main>
 
-</div> 
+    </div> 
 
     <!-- Footer  -->
     <footer class="footer-principal">
         <div class="contenedor-footer">
-          <div class="logo-footer"><!-- PENDIENTE COMPAÑERA -->
+          <div class="logo-footer">
             <a href="Wiki UX.html"><img src="img/Logo.svg" alt="Wiki Design Logo Footer" class="img-logo-footer"></a> </div>
-			
+            
             <!-- Texto de Copyright  -->
             <div>
               <div class="texto-footer">
@@ -163,7 +229,7 @@
             </div>
         </div>
     </footer>
-<!-- Script -->
-	<script src="js/main.js"></script>
+    <!-- Script actualizado para el comportamiento del menú -->
+    <script src="js/menu-temas.js"></script>
 </body>
 </html>
