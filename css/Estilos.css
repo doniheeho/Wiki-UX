@@ -114,57 +114,66 @@ body {
 }
 
 /* Sidebar */
-.sidebar-temas {
-    width: 280px;
-    background-color: var(--bg-secundario);
-    padding: 25px;
-    border-radius: 12px;
-    height: fit-content;
+.sidebar {
+  position: fixed;
+  top: 78px;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.sidebar-temas h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-lila);
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.panel-menu {
+  margin: 0;
+  padding: 16px;
 }
 
-.sidebar-temas ul {
-    list-style: none;
-    margin-bottom: 30px;
+.panel-menu.temas {
+  z-index: 2;
+  background: transparent;
+}
+.panel-menu.sumario {
+  z-index: 1;
+}
+{
+  background: var(--fondo)
+}
+.panel-menu.sumario > summary {
+  padding-bottom: .3rem;
+  background: var(--azul-panel);
+}
+.panel-menu summary {
+  color: var(--oliva);
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-/* Texto sidebar */
-.sidebar-temas li {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--color-verde);
-    padding: 8px 10px;
-    margin-bottom: 6px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    transition: background 0.3s ease, color 0.3s ease;
+.panel-menu ul {
+  margin: 16px 0 4px;
+  padding-left: 18px;
 }
 
-.sidebar-temas li:hover {
-    background-color: rgba(125, 140, 70, 0.15);
-    color: var(--texto-blanco);
+.panel-menu li {
+  margin-bottom: 10px;
 }
 
-.sidebar-temas li.activo {
-    background-color: var(--color-purpura);
-    color: var(--texto-blanco);
-    font-weight: 600;
+.panel-menu a {
+  color: var(--gris-claro);
+  font-size: 13px;
+  line-height: 1.35;
+  text-decoration: none;
 }
+
+.tema-activo {
+  margin: 10px 0 0;
+  color: var(--gris-claro);
+  font-size: 13px;
+}
+
 
 /* Íconos */
 .icono-inline {
