@@ -17,6 +17,13 @@ html {
     --color-verde: #7D8C46;     /* Botón acento de acción */
     --texto-claro: #D9D9D9;     /* Texto de lectura */
     --texto-blanco: #FFFFFF;    /* Títulos texto resaltado */
+	 --fondo: #0F1926;
+  --azul-profundo: #1A1C40;
+  --azul-panel: #262A47;
+  --morado: #57568C;
+  --lila: #9286D9;
+  --gris-claro: #D9D9D9;
+  --oliva: #7D8C46;
 }
 
 body {
