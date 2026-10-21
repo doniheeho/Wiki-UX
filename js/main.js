@@ -214,8 +214,10 @@
     catch (e) { return ""; }
   }
 
-  function construir() {
+function construir() {
     var actual = rutaLimpia(location.href);
+    
+    // 1. Contenedor principal de Temas
     var html = '<details class="panel-menu temas" open><summary>Temas</summary><nav aria-label="Temas"><ul>';
     TEMAS.forEach(function (t) {
       var activo = false;
@@ -231,7 +233,18 @@
         '<img class="icono-tema" src="' + ICONOS + t.icono + '" alt=""><span>' + t.tema + '</span></button>' +
         '<ul class="parejas">' + items + '</ul></li>';
     });
-    return html + '</ul></nav></details>';
+    html += '</ul></nav>';
+
+    // 2. Bloque de Subtema integrado dentro del mismo panel
+    html += '<div class="bloque-sumario">' +
+            '<h3 class="titulo-sumario">SUBTEMA</h3>' +
+            '<ul>' +
+              '<li><a href="#arquitectura" class="boton-sumario">ARQUITECTURA E INTERACCIÓN</a></li>' +
+            '</ul>' +
+          '</div>';
+
+    html += '</details>';
+    return html;
   }
 
   function iniciar() {
