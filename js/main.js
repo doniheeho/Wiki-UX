@@ -1,10 +1,10 @@
 /* ============================================================
-   MENÚ DE TEMAS DE WIKIDESIGN
+   MENÚ DE TEMAS DE WIKIDESIGN · Actualizado para Donovan
    ============================================================ */
 (function () {
   var TEMAS = [
   {
-    "icono": "experiencia-usuario",
+    "icono": "Experiencia de usuario.svg",
     "tema": "Experiencia de usuario",
     "parejas": [
       {
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "icono": "diseno-web",
+    "icono": "Diseño web.svg",
     "tema": "Diseño web",
     "parejas": [
       {
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "icono": "design-thinking",
+    "icono": "Design thinking.svg",
     "tema": "Design thinking",
     "parejas": [
       {
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "icono": "diseno-centrado-usuario",
+    "icono": "Diseño centrado en el usuario.svg",
     "tema": "Diseño centrado en el usuario",
     "parejas": [
       {
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "icono": "diseno-interaccion",
+    "icono": "Diseño de interaccion.svg",
     "tema": "Diseño de interacción",
     "parejas": [
       {
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "icono": "arquitectura-informacion",
+    "icono": "Arquitectura de la informacion.svg",
     "tema": "Arquitectura de la información",
     "parejas": [
       {
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "icono": "diseno-navegacion",
+    "icono": "Diseño de navegacion.svg",
     "tema": "Diseño de navegación",
     "parejas": [
       {
@@ -158,7 +158,7 @@
     ]
   },
   {
-    "icono": "diseno-visual",
+    "icono": "Diseño visual.svg",
     "tema": "Diseño visual",
     "parejas": [
       {
@@ -177,7 +177,7 @@
   }
 ];
 
-  var ICONOS = "assets/icons/";
+  var ICONOS = "img/";
 
   var CSS = "/* ---------- Temas con submenú lateral ---------- */\n" +
             ".panel-menu.temas .tema-item { position: relative; }\n" +
@@ -228,7 +228,7 @@
       }).join("");
       html += '<li class="tema-item' + (activo ? ' tema-activo' : '') + '">' +
         '<button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">' +
-        '<img class="icono-tema" src="' + ICONOS + t.icono + '.png" alt=""><span>' + t.tema + '</span></button>' +
+        '<img class="icono-tema" src="' + ICONOS + t.icono + '" alt=""><span>' + t.tema + '</span></button>' +
         '<ul class="parejas">' + items + '</ul></li>';
     });
     return html + '</ul></nav></details>';
@@ -258,3 +258,15 @@
         nuevo.querySelectorAll(".tema-item.abierto").forEach(function (o) {
           if (o !== item) { o.classList.remove("abierto"); o.querySelector(".tema-boton").setAttribute("aria-expanded", "false"); }
         });
+      });
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".tema-item")) {
+        nuevo.querySelectorAll(".tema-item.abierto").forEach(function (o) { o.classList.remove("abierto"); o.querySelector(".tema-boton").setAttribute("aria-expanded", "false"); });
+      }
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
